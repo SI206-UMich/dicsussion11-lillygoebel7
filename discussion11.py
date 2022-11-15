@@ -43,7 +43,7 @@ def create_patients_table(cur, conn):
     cur.execute("CREATE TABLE Patients (pet_id INTEGER PRIMARY KEY, name TEXT, species_id INTEGER,\
          age INTEGER, cuteness INTEGER, aggressiveness INTEGER)")
     conn.commit()
-    
+
     pass
 
 
@@ -67,6 +67,9 @@ def add_pets_from_json(filename, cur, conn):
     json_data = json.loads(file_data)
 
     # THE REST IS UP TO YOU
+    print(json_data)
+
+
     pass
 
 
